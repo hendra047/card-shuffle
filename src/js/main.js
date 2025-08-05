@@ -1,6 +1,4 @@
-import './main.css';
-
-
+import '../css/main.css';
 
 // Register service worker
 if ('serviceWorker' in navigator) {
