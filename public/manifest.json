@@ -1,0 +1,16 @@
+{
+    "name": "Random Card Draw",
+    "short_name": "CardDraw",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0f2027",
+    "theme_color": "#1abc9c",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "assets/card.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CardDraw</string>
+    <string name="title_activity_main">CardDraw</string>
+    <string name="package_name">com.example.carddraw</string>
+    <string name="custom_url_scheme">com.example.carddraw</string>
+</resources>

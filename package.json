@@ -1,0 +1,19 @@
+{
+    "name": "card-shuffle",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite --host",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "vite": "^7.0.0"
+    },
+    "dependencies": {
+        "@capacitor/android": "^7.4.1",
+        "@capacitor/cli": "^7.4.1",
+        "@capacitor/core": "^7.4.1"
+    }
+}

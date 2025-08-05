@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+  /* overflow: hidden; */
+    color: white;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.category-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    background: #787878;
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.btn-bonus      { background-color: #07A2BF; }
+.btn-kesempatan { background-color: #F39C12; }
+.btn-tantangan  { background-color: #E74C3C; }
