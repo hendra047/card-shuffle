@@ -1,62 +1,163 @@
+@font-face {
+    font-family: 'paytone-one';
+    src: url('/src/fonts/paytone-one/PaytoneOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'outfit';
+    src: url('/src/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+:root {
+    --card-gap: .65rem;
+}
+
 body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
     font-family: sans-serif;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100dvh;
-  /* overflow: hidden; */
-    color: white;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 .card-container {
-    width: 180px;
-    height: 260px;
     perspective: 1000px;
     margin-bottom: 20px;
 }
-
 .card {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 260px;
+    aspect-ratio: 1 / 1.5;
+    background-color: #F9F4DA;
+    border-radius: 15px;
+    color: #231F20;
     font-size: 2em;
+    padding: var(--card-gap);
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-gap);
     backface-visibility: hidden;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
-
+.card-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: .15rem solid #231F20;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.card-cover.card-bonus {
+    background-color: #8de6f6;
+}
+.card-cover.card-kesempatan {
+    background-color: #f3ca88;
+}
+.card-cover.card-tantangan {
+    background-color: #f38ba3;
+}
+.card-cover img {
+    width: 7em;
+}
+.card.card-bonus .card-title {
+    background-color: #8de6f6;
+}
+.card.card-bonus .card-description {
+    background-color: #07A2BF;
+    color: #F9F4DA;
+}
+.card.card-kesempatan .card-title {
+    background-color: #f3ca88;
+}
+.card.card-kesempatan .card-description {
+    background-color: #F39C12;
+}
+.card.card-tantangan .card-title {
+    background-color: #f38ba3;
+}
+.card.card-tantangan .card-description {
+    background-color: #E74C3C;
+    color: #F9F4DA;
+}
+.card-title {
+    font-family: 'paytone-one';
+    font-size: 1.5rem;
+    line-height: 1.2;
+    border-radius: 8px 8px 0 0;
+    text-transform: uppercase;
+}
+.card-description {
+    flex: 1;
+    font-family: 'outfit';
+    font-size: 1.3rem;
+    border-radius: 0 0 8px 8px;
+}
+.card-title, .card-description {
+    color: #231F20;
+    padding: .5em .65em;
+}
+.card, .card-title, .card-description {
+    border: .15rem solid #231F20;
+}
 .card.flip {
     transform: rotateY(180deg);
 }
 
 button {
-    padding: 10px 20px;
+    font-family: 'outfit';
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 1em 2em;
     font-size: 16px;
-    border: none;
+    border: .12rem solid #231f20;
     border-radius: 8px;
-    background-color: #1abc9c;
-    color: white;
+    background-color: #F9F4DA;
+    color: #231F20;
     cursor: pointer;
     box-shadow: 0 5px 10px rgba(0,0,0,0.3);
     transition: background-color 0.2s;
     user-select: none !important;
     -webkit-tap-highlight-color: transparent !important;
 }
-
-button:hover {
-    background-color: #16a085;
-}
-
 button:focus {
     outline: none;
+}
+
+.btn-draw {
+    margin-bottom: 6rem;
+}
+.btn-draw:active {
+    background-color: #b0a87b;
+}
+.btn-back {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.back-icon {
+    width: 3.45rem;
+    height: 3.45rem;
+}
+.back-icon path {
+    fill: #F9F4DA;
 }

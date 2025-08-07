@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'riffic';
+    src: url('/src/fonts/riffic/RifficFree-Bold.ttf');
+}
+@font-face {
+    font-family: 'mouse-memoirs';
+    src: url('/src/fonts/mouse-memoirs/MouseMemoirs-Regular.ttf');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,14 +17,20 @@ body {
     align-items: center;
     justify-content: center;
     height: 100dvh;
-  /* overflow: hidden; */
     color: white;
 }
 
 .title {
+    font-family: 'riffic';
+    font-size: 4rem;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 50px;
     margin-bottom: 70px;
+}
+
+.container {
+    margin-bottom: 50px;
 }
 
 .category-btn {
@@ -25,14 +40,25 @@ body {
 }
 
 .btn {
+    font-family: 'mouse-memoirs';
+    font-size: 3rem;
     color: white;
     text-decoration: none;
     background: #787878;
-    padding: 1.5rem 3rem;
-    font-size: 1.5rem;
+    padding: 1rem 3rem;
     text-align: center;
+    cursor: pointer;
     border-radius: 10px;
+    user-select: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+    border: .12rem solid #231f20;
 }
 .btn-bonus      { background-color: #07A2BF; }
 .btn-kesempatan { background-color: #F39C12; }
 .btn-tantangan  { background-color: #E74C3C; }
+.btn:active.btn-bonus      { background-color: #05687a; }
+.btn:active.btn-kesempatan { background-color: #7f520b; }
+.btn:active.btn-tantangan  { background-color: #892e24; }
+.btn:focus {
+    outline: none;
+}
