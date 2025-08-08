@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="./manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="theme-color" content="#1abc9c" />
-    <link rel="apple-touch-icon" href="/assets/card.png" />
+    <link rel="apple-touch-icon" href="./assets/card.png" />
     <title>Random Card Draw</title>
 </head>
 <body>
     <h1 class="title">Draw Card</h1>
     <div class="container">
         <div class="category-btn">
-            <a href="/draw?type=bonus" class="btn btn-bonus">Bonus</a>
-            <a href="/draw?type=kesempatan" class="btn btn-kesempatan">Kesempatan</a>
-            <a href="/draw?type=tantangan" class="btn btn-tantangan">Tantangan</a>
+            <button onclick="redirect('./draw.html?type=bonus')" class="btn btn-bonus">Bonus</button>
+            <button onclick="redirect('./draw.html?type=kesempatan')" class="btn btn-kesempatan">Kesempatan</button>
+            <button onclick="redirect('./draw.html?type=tantangan')" class="btn btn-tantangan">Tantangan</button>
         </div>
     </div>
 
-    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
 </body>
 </html>

@@ -9,6 +9,11 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         draw: resolve(__dirname, 'draw.html')
       }
+    },
+  },
+  server: {
+    watch: {
+      ignored: ['**/www/**']
     }
   }
 });

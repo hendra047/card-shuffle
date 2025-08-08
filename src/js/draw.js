@@ -1,4 +1,9 @@
+import { App } from '@capacitor/app';
 import '../css/draw.css';
+
+App.addListener('backButton', () => {
+  window.location.href = '/index.html';
+});
 
 const CARDS = {
     bonus: [
@@ -34,6 +39,14 @@ let drawPool = [];
 
 const params = new URLSearchParams(window.location.search);
 const type = params.get('type') || 'tantangan';
+
+function redirect(target) {
+    document.body.classList.add('fade-out');
+    setTimeout(() => {
+        window.location.href = target;
+    }, 400); // match CSS duration
+}
+window.redirect = redirect;
 
 function drawUnique(items) {
     if (drawPool.length === 0) {
@@ -83,12 +96,3 @@ drawBtn.addEventListener('click', drawCard);
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('card-box').querySelector('.card-cover').classList.add(`card-${type}`);
 });
-
-// Register service worker
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
-            .then(reg => console.log('Service Worker registered:', reg))
-            .catch(err => console.log('Service Worker registration failed:', err));
-    });
-}

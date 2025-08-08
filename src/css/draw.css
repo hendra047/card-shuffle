@@ -33,12 +33,12 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .card-container {
     perspective: 1000px;
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
 }
 .card {
     width: 260px;
@@ -155,9 +155,14 @@ button:focus {
 }
 
 .back-icon {
-    width: 3.45rem;
-    height: 3.45rem;
+    width: 3rem;
+    height: 3rem;
 }
 .back-icon path {
     fill: #F9F4DA;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }

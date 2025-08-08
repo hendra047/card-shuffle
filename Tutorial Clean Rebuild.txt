@@ -1,0 +1,8 @@
+1. Open powershell or terminal
+2. Type this command based on order from first command to last command:
+   - npm run build
+   - npx cap copy
+   - npx cap copy android (optional)
+   - cd android
+   - ./gradlew clear
+   - ./gradlew assembleDebug

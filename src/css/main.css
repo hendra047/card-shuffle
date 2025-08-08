@@ -56,9 +56,11 @@ body {
 .btn-bonus      { background-color: #07A2BF; }
 .btn-kesempatan { background-color: #F39C12; }
 .btn-tantangan  { background-color: #E74C3C; }
-.btn:active.btn-bonus      { background-color: #05687a; }
-.btn:active.btn-kesempatan { background-color: #7f520b; }
-.btn:active.btn-tantangan  { background-color: #892e24; }
 .btn:focus {
     outline: none;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }

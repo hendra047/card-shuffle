@@ -1,4 +1,4 @@
-package com.example.carddraw;
+package com.carddraw.draw;
 
 import com.getcapacitor.BridgeActivity;
 
