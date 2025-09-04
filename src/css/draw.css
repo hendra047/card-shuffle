@@ -69,7 +69,7 @@ body {
     background-color: #8de6f6;
 }
 .card-cover.card-kesempatan {
-    background-color: #f3ca88;
+    background-color: #9bff80;
 }
 .card-cover.card-tantangan {
     background-color: #f38ba3;
@@ -85,10 +85,10 @@ body {
     color: #F9F4DA;
 }
 .card.card-kesempatan .card-title {
-    background-color: #f3ca88;
+    background-color: #9bff80;
 }
 .card.card-kesempatan .card-description {
-    background-color: #F39C12;
+    background-color: #2eda00;
 }
 .card.card-tantangan .card-title {
     background-color: #f38ba3;
@@ -103,12 +103,14 @@ body {
     line-height: 1.2;
     border-radius: 8px 8px 0 0;
     text-transform: uppercase;
+    text-align: center;
 }
 .card-description {
     flex: 1;
     font-family: 'outfit';
     font-size: 1.3rem;
     border-radius: 0 0 8px 8px;
+    white-space: break-spaces;
 }
 .card-title, .card-description {
     color: #231F20;

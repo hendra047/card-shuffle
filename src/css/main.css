@@ -54,7 +54,7 @@ body {
     border: .12rem solid #231f20;
 }
 .btn-bonus      { background-color: #07A2BF; }
-.btn-kesempatan { background-color: #F39C12; }
+.btn-kesempatan { background-color: #2eda00; }
 .btn-tantangan  { background-color: #E74C3C; }
 .btn:focus {
     outline: none;
